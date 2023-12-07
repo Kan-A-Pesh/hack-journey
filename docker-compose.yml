@@ -6,7 +6,7 @@ services:
             context: .
             dockerfile: ./docker/web.Dockerfile
         ports:
-            - "0.0.0.0:8080:80"
+            - "0.0.0.0:${PORT:-80}:80"
         volumes:
             - ./src:/var/www/html
         networks:
@@ -15,5 +15,7 @@ services:
         build:
             context: ./bot
             dockerfile: ../docker/crawler.Dockerfile
+        environment:
+            - CHROMIUM_PLATFORM=${CHROMIUM_PLATFORM:-amd64}
         networks:
             - default
