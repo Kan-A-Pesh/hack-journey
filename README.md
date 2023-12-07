@@ -20,14 +20,14 @@ git clone https://github.com/Kan-A-Pesh/hack-journey.git
 # export DOCKER_DEFAULT_PLATFORM=linux/arm64
 
 # Build the Docker image.
-docker compose build # --build-arg CHROMIUM_PLATFORM=arm64
+docker compose build
 ```
 
 ### 3. Run the Docker container
 
 ```bash
 # Run the Docker container.
-docker compose up -d
+PORT=8080 docker compose up -d
 ```
 
 ### 4. Solve the challenges
