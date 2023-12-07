@@ -1,0 +1,12 @@
+input.danger {
+    color: red;
+    border: 1px solid red;
+}
+
+p.danger {
+    color: red;
+}
+
+P.success {
+    color: green;
+}

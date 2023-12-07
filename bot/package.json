@@ -1,0 +1,19 @@
+{
+    "name": "hacker-journey-crawl",
+    "version": "1.0.0",
+    "description": "A crawler bot for 404 Hacker's Journey challenges",
+    "main": "script.js",
+    "scripts": {
+        "test": "node --watch script.js",
+        "start": "node script.js"
+    },
+    "author": "Kan-A-Pesh",
+    "license": "ISC",
+    "private": true,
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "dotenv": "^16.3.1",
+        "express.js": "^1.0.0",
+        "puppeteer": "^21.6.0"
+    }
+}
