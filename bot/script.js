@@ -2,7 +2,7 @@
     require("dotenv").config();
 
     const port = process.env.PORT || 80;
-    const robotCookie = process.env.ROBOT_COOKIE || "J'ai un cookie qui prouve que je suis un r0b0t!";
+    const robotCookie = "J'ai un cookie qui prouve que je suis un r0b0t!";
 
     // Initialize the Puppeteer browser
     const puppeteer = require("puppeteer");

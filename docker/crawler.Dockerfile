@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM node:20-alpine
 
 # manually installing chrome
 RUN apk add chromium
