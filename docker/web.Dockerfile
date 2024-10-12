@@ -19,4 +19,7 @@ RUN a2enmod rewrite
 
 EXPOSE 80
 
+WORKDIR /var/www/html
+COPY ./src /var/www/html/
+
 CMD ["apache2-foreground"]
